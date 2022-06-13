@@ -1,0 +1,33 @@
+ .todo-list {
+     padding: 15px 5px 10px;
+     text-align: center;
+ }
+
+ .todo-list__form-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .todo-list__tab-content {
+     display: none;
+     text-align: center;
+
+     &.active {
+         display: block;
+     }
+ }
+
+ .tab-content__title {
+     text-align: left;
+     padding-left: 10px;
+ }
+
+ .tab-content__footer {
+     display: flex;
+     margin-left: 10px;
+     margin-right: 10px;
+     padding-bottom: 10px;
+     justify-content: space-between;
+     align-items: center;
+ }
