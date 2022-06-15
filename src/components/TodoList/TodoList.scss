@@ -28,6 +28,53 @@
      margin-left: 10px;
      margin-right: 10px;
      padding-bottom: 10px;
+     padding-top: 10px;
      justify-content: space-between;
      align-items: center;
+ }
+
+ .todo-card {
+     display: flex;
+     padding: 15px;
+     align-items: center;
+ }
+
+ .todo-card__complete {
+     position: relative;
+     z-index: 1;
+     padding: 0;
+     border-radius: 50%;
+     border: 1px solid grey;
+     background-color: transparent;
+     width: 28px;
+     height: 28px;
+     flex-shrink: 0;
+     cursor: pointer;
+
+     &.completed {
+         border: none;
+     }
+
+     & img {
+         display: none;
+     }
+
+     &.completed img {
+         position: relative;
+         z-index: -1;
+         display: block;
+     }
+
+     &.completed p {
+         text-decoration: underline;
+     }
+ }
+
+ .todo-card__text {
+     margin-left: 10px;
+     word-break: break-all;
+
+     &.completed {
+         text-decoration: line-through;
+     }
  }
